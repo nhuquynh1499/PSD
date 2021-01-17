@@ -1,0 +1,66 @@
+<section class="book">
+    <div class="container">
+        <div class="book__text">
+            <div class="book__text-subtitle">
+                @@include("../commons/typography-h6.html", {
+                    "contentTypography": "Reservation"
+                })
+            </div>
+
+            <div class="book__text-title">
+                @@include("../commons/typography-h1.html", {
+                    "contentTypography": "Book your table"
+                })
+            </div>
+        </div>
+
+        <form class="book__form">
+            <div class="book__form-item">
+                @@include("../commons/input.html", {
+                    "name": "name",
+                    "label": "Name",
+                    "type": "text"
+                })
+            </div>
+            
+            <div class="book__form-item">
+                @@include("../commons/input.html", {
+                    "name": "email",
+                    "label": "Email",
+                    "type": "text"
+                })
+            </div>
+
+            <div class="book__form-item">
+                @@include("../commons/input.html", {
+                    "name": "date",
+                    "label": "Date",
+                    "type": "date"
+                })
+            </div>
+
+            <div class="book__form-item">
+                @@include("../commons/input.html", {
+                    "name": "time",
+                    "label": "Time",
+                    "type": "time"
+                })
+            </div>
+
+            <div class="book__form-item">
+                @@include("../commons/input.html", {
+                    "name": "people",
+                    "label": "People",
+                    "type": "number"
+                })
+            </div>
+            <div class="book__form-button">
+                <div class="book__form-button-wrapped">
+                    @@include("../commons/button-yellow.html", {
+                        "contentButton": "Find a table",
+                    })
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,143 @@
+@import "../_constants.scss";
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s;
+
+    .container {
+        flex-direction: column;
+        padding: 40px 0px;
+        transition: all 0.3s;
+    }
+    
+    &__infor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__phone {
+        display: flex;
+        &-number {
+            text-align: end;
+            display: flex;
+            flex-direction: column;
+            transform: translateY(4px);
+
+            span {
+                text-transform: uppercase;
+                font-weight: $font-weight-bold;
+                color: $color-black;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            &-content {
+                font-size: 29px;
+            }
+        }
+
+        &-icon {
+            margin-left: 16px;
+        }
+    }
+
+    &__iconMenu {
+        display: none;
+        z-index: 3;
+        cursor: pointer;
+        transform: translateY(5px);
+        opacity: 0.8;
+    }
+
+    &__iconMenu-close {
+        cursor: pointer;
+        z-index: 100;
+        position: absolute;
+        left: -100vw;   
+        top: 5vh;  
+        transition: all 0.7s;
+        opacity: 0.8;
+      }
+    
+      &__iconMenu-close.open {
+        left: 80vw;
+      }
+
+    &__smallMenu {
+        display: none;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            position: fixed;
+            top: 0;
+            left: -100vw;
+            z-index: 99;
+            transition: left 0.7s ease;
+            padding-top:30px;
+            padding-bottom: 30px;
+            background:#485563;
+
+        }
+    
+        li {
+          background:#485563;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          height: 50px;
+          width: 100vw;
+          padding: 0px 30px;
+    
+          &:hover {
+            background:#29323c;
+          }
+    
+          a {
+            color: #fff;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
+    
+    &__smallMenu.open {
+        ul {
+            left: 0;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+
+        li {
+            list-style-type: none;
+            padding-left: 58px;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color-black;
+                font-weight: $font-weight-bold;
+                line-height: 21px;
+                letter-spacing: 3px;
+                padding-bottom: 5px;
+                transition: all 0.3s;
+                &:hover {
+                    border-bottom: 4px solid $color-black;
+                }
+            }         
+        }
+    }
+}

@@ -1,0 +1,636 @@
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 100%!important;
+        padding-left: 40px!important;
+        padding-right: 40px!important;  
+    }
+
+    .food-item {
+        &__image {
+            height: 25vw;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .banner {
+        .container {
+            padding-top: 216px;
+            padding-bottom: 34px;
+            justify-content: center;
+        }
+
+        &__text {
+            margin: 0px;
+        }
+
+        &__image {
+            margin: 0px;
+        }
+
+    }
+
+    .choiceAndEnjoy {
+        .container {
+            padding-top: 76px;
+            padding-bottom: 76px;
+        }
+    }
+
+    .book__form {
+        padding: 0 17vw;
+        &-item {
+            input {
+                padding: 2.2vw 3vw
+            }
+        }
+
+        &-button {
+            &-wrapped {
+                button {
+                    font-size: 17px;
+                    padding: 2.2vw 3vw
+                }
+            }
+        }
+    }
+
+    .album {
+        &-left {
+            .album-item {
+                height: 100%;
+            }
+        }
+
+        &-right {
+            .album-item {
+                height: 47%;
+            }
+        }
+    }
+
+    .event {
+        &__text {
+            &-subtitle {
+                margin-bottom: 18px;
+            }
+        }
+        &__slideshow {
+            &-listImage {
+                height: 40vw;
+
+                &-item {
+                    height: 40vw;
+                }
+
+            }
+            &-slider {
+                margin-top: 3vw;
+            }
+        }
+    }
+
+    .footer {
+        .container {
+            padding-top: 78px;
+            padding-bottom: 78px;
+        }
+
+        &__infor {
+            &-item {
+                &-image {
+                    margin-right: 2.5vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    body {
+        font-size: 1.4vw;
+    }
+
+    .button {
+        padding: 1.5vw 4vw;
+        &-border {
+            font-size: 1.7vw;
+        }
+    }
+
+    .typography {
+        &-h1 {
+            font-size: 4.1vw;
+        }
+
+        &-h2 {
+            font-size: 3.4vw;
+        }
+
+        &-h3 {
+            font-size: 2.8vw;
+        }
+
+        &-h5 {
+            font-size: 2vw;
+        }
+
+        &-h6 {
+            font-size: 1.7vw;
+        }
+    }
+    
+    .banner {
+        &__text{
+            &-title {
+                &-question {
+                    font-size: 4vw;
+                }
+
+                &-content {
+                    font-size: 7.5vw;
+                }
+
+                &-answer {
+                    font-size: 2vw;
+                }
+            }
+
+            &-sub {
+                &-pre {
+                    font-size: 1.5vw;
+                }
+
+                &-main {
+                    font-size: 4.5vw;
+                }
+            }
+        }
+
+        &__image {
+            width: 45%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        
+        &__flower {
+            width: 14vw;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .book__form {
+        padding: 0 6vw;
+    }
+}
+
+@media only screen and (max-width: 1206px) {
+    .food-item {
+        &__text {
+            &-sub {
+                width: 31vw;
+            }
+        }
+
+        &__button {
+            margin-top: 3vw;
+            margin-bottom: 0px;
+        }
+    }
+
+    .choiceAndEnjoy {
+        &::after {
+            display: none;
+        }
+
+        &__text {
+            margin: 0px 12vw 40px;
+        }
+
+        .listFood {
+            justify-content: space-around;
+
+            &-item {
+                &:last-child {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .album-item__content {
+        max-width: 70%;
+
+        
+    }
+
+    .typography {
+        &-h1 {
+            font-size: 5vw;
+        }
+    }
+
+    .book {
+        &__text {
+            margin-bottom: 8vw;
+        }
+    }
+
+    .footer {
+        &__up {
+            margin-bottom: 13vw;
+        }
+
+        &__title-text {
+            max-width: 43vw;
+        }
+
+        &__infor {
+            margin-right: 5vw;
+            margin-left: 5vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .album {
+        &-left {
+            .album-item__content {
+                padding: 4vw;
+
+                h2 {
+                    line-height: 110%;
+                }
+            }
+        }
+
+        &-right {
+            .album-item__content {
+                padding: 2.5vw 3vw ;
+            }
+        }
+    }
+    
+
+    .footer {
+        &__up {
+            flex-direction: column;
+        }
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-logo {
+                img {
+                    width: 50vw;
+                }
+            }
+            &-text {
+                max-width: 80%;
+                font-size: 15px;
+                text-align: center;
+                margin-top: 5vw;
+            }
+        }
+
+        &__infor {
+            margin-top: 10vw;
+            margin-right: 0px;
+            margin-left: 0px;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size:15px;
+    }
+
+    .typography {
+        &-h1 {
+            font-size: 45px;
+        }
+    }
+
+    .event {
+        &__text {
+            &-title {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+        &__slideshow-slider-item {
+            width: 2vw;
+            height: 2vw;
+        }
+    }
+
+    
+
+    .album {
+        &-left {
+            margin-right: 5vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .album {
+        &-right {
+            .album-item__content {
+                padding: 2vw 3vw ;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 690px) {
+
+    .header {
+        &__logo {
+            width: 200px;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__iconMenu {
+            display: block;
+        }
+
+        &__phone {
+            display: none;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__smallMenu {
+            display: block;
+          }
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .event {
+        &__slideshow {
+            &-listImage {
+                height: 50vw;
+
+                .right, 
+                .left {
+                    display: none;
+                }
+
+                &-item {
+                    height: 50vw;
+                }
+            }
+
+            &-slider {
+                margin-top: 5%;
+            }
+        }
+    }
+
+    .footer {
+        &__down {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__title {
+            &-text {
+                max-width: 100%;
+            }
+        }
+
+        &__copy {
+            margin-top: 7vw;
+            text-align: center;
+        }
+    }
+
+    .typography {
+        &-h2 {
+            font-size: 6vw;
+        }
+
+        &-h3 {
+            font-size: 4vw;
+        }
+
+        &-h5 {
+            font-size: 3vw;
+        }
+    }
+
+    .album {
+        .container {
+            flex-direction: column;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        &-left {
+            margin-right: 0px;
+            width: 100%;
+        }
+
+        &-right {
+            width: 100%;
+            .album-item {
+                margin-top: 15px;
+                &__content {
+                    padding: 3.5vw 4.6vw;
+                    max-width: 60%;
+                }
+            }
+        }
+
+        .album-item__content {
+            padding: 3.5vw 4.6vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    body {
+        font-size: 13px;
+    }
+   
+    .banner {
+        .container {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__image {
+            margin-bottom: 30px;
+        }
+
+        &__text{
+            &-title {
+                &-question {
+                    font-size: 6vw;
+                }
+
+                &-content {
+                    font-size: 12vw;
+                }
+
+                &-answer {
+                    font-size: 3vw;
+                }
+            }
+
+            &-sub {
+                &-pre {
+                    font-size: 3vw;
+                }
+
+                &-main {
+                    font-size: 8vw;
+                }
+            }
+        }
+
+        &__flower {
+            display: none;
+        }
+    }
+
+    .button {
+        padding: 2vw 5vw;
+        &-border {
+            font-size: 3vw;
+        }
+    }
+
+    .typography {
+        &-h1 {
+            font-size: 8vw;
+        }
+        &-h6 {
+            font-size: 17px;
+        }
+    }
+
+    .food-item {
+        margin: 40px 0px;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-title {
+                margin: 8px 0px;
+            }
+            &-sub {
+                width: 50vw;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &__image {
+            height: 50vw;
+            img {
+                height: 100%;
+                filter: drop-shadow(14.5px 14.5px 19px rgba(12,13,12,.36));
+            }
+        }
+    }
+
+    .choiceAndEnjoy {
+        .container {
+            padding: 76px 35px 20px;
+        }
+        &__text {
+            margin: 0px;
+        } 
+        .listFood {
+            flex-direction: column;
+            &-item {
+                margin: 0px!important;
+            }
+        }
+    }
+
+    .event {
+        &__text {
+            &-title {
+                h1 {
+                    font-size: 9vw;
+                }
+            }
+        }
+
+        &__slideshow-slider-item {
+            width: 12px;
+            height: 12px;
+        }
+    }
+ 
+    .book__form {
+        flex-direction: column;
+        padding: 0px;
+
+        &-item {
+            width: 100%;
+            padding: 10px 13px;
+            input {
+                width: 100%;
+            }
+        }
+
+        &-button {
+            width: 100%;
+            // padding: 10px 13px;
+            &-wrapped {
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__infor-item {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .header {
+        &__logo {
+            width: 180px;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        padding-right: 20px !important;
+        padding-left: 20px !important; 
+    }
+}   

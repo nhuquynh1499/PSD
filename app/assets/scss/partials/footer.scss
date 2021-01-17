@@ -1,0 +1,85 @@
+@import "../_constants.scss";
+
+
+.footer {
+    background-size: cover;
+    color: $color-white;
+    background-image: url('../images/footer.png');
+
+    .container {
+        padding: 78px 31px 68px 44px;
+        flex-direction: column;
+    }
+
+    &__up,
+    &__down {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__up {
+        margin-bottom: 161px;
+    }
+
+    &__title {
+        
+        &-text {
+            margin-top: 60px;
+            max-width: 533px;
+            line-height: 25px;
+            letter-spacing: -0.3px;
+        }
+
+    }
+
+    
+
+    &__copy {
+        letter-spacing: -0.3px;
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__infor {
+        margin-top: 163px;
+        margin-right: 83px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $color-white;
+
+            &:first-child {
+                margin-bottom: 20px;
+            }
+
+            &:last-child {
+                p {
+                    &:hover {
+                        color: $color-yellow;
+                    }
+                }
+            }
+
+            &-image {
+                margin-right: 33px;
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 17px;
+                letter-spacing: -0.2px;
+            }
+        }
+    }
+
+    
+}

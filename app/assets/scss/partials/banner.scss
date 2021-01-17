@@ -1,0 +1,88 @@
+.banner {
+    position: relative;
+    color: $color-black;
+    background-image: url('../images/banner-part-1.png');
+    background-color: #EBE9AB;
+    background-repeat: no-repeat;
+
+    .container {
+        padding: 216px 0 34px;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+    }
+
+    &__text {
+        margin-left: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-question {
+                font-family: "Gabelisa";
+                font-size: 58px;
+                text-transform: capitalize;
+            }
+    
+            &-content {
+                font-size: 90px;
+                font-family: "FrederickatheGreat";
+                text-transform: uppercase;
+            }
+    
+            &-answer {
+                font-size: 27px;
+                font-weight: 700;
+                font-family: "Montserrat";
+                text-transform: uppercase;
+                padding: 12px 0px 32px;
+                border-bottom: 2px solid $color-black;
+            }
+        }
+
+        &-sub {
+            display: flex;
+            align-items: center;
+            font-family: "FrederickatheGreat";
+            text-transform: uppercase;
+
+            margin: 30px 0px 23px;
+
+            &-pre {
+                display: flex;
+                flex-direction: column;
+                font-size: 19px;
+                padding-right: 12px;
+            }
+
+            &-main {
+                font-size: 57px;
+            }
+        }
+
+        &-button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            transform: translateX(-10px);
+        }
+    }
+
+    &__image {
+        margin-right: 88px;
+        filter: drop-shadow(5.5px 9.526px 125px rgba(12,13,12,0.31));
+    }
+
+    &__flower {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(50%);
+        img {
+            filter: drop-shadow(-42.21px -8.205px 73.5px rgba(12,13,12,0.21));
+        }
+    }
+}

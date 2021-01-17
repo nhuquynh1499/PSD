@@ -1,0 +1,138 @@
+@import "./_constants.scss";
+
+.typography {
+  &-h1 {
+    font-size: $font-size-typography-h1;
+    font-family: "FrederickatheGreat";
+    text-transform: uppercase;
+    font-weight: $font-weight-regular;
+  }
+
+  &-h2 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-typography-h2;
+    text-transform: uppercase;
+  }
+  &-h3 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-typography-h3;
+    text-transform: uppercase;
+  }
+  &-h4 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-typography-h4;
+  }
+
+  &-h5 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-typography-h5;
+    text-transform: uppercase;
+  }
+
+  &-h6 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-typography-h6;
+    text-transform: uppercase;
+  }
+}
+
+.button {
+  text-transform: uppercase;
+  color: $color-black;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: $font-weight-extra-bold;
+  transition: all 0.2s;
+  &-border{
+    background-color: transparent;
+    border: 1px solid $color-black;
+    padding: 15px 37px;
+    font-size: 21px;
+
+    &:hover {
+      color: $color-white;
+      border: 1px solid $color-white;
+    }
+  }
+
+  &-yellow {
+    background-color: $color-yellow;
+    padding: 18px 40px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
+    li {
+      transition: all .2s;
+      
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  
+    li:not(:first-child) {
+      margin-left: 13px;
+    }
+  }
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    height: 100%;
+    img {
+      height: 100%;
+      filter: drop-shadow(14.5px 25.115px 19px rgba(12,13,12,0.36));
+    }
+  }
+
+  &__text {
+    &-title {
+      letter-spacing: 1px;
+      margin-bottom: 9px;
+      margin-top: 32px;
+      line-height: 38px;
+    }
+
+    &-sub {
+      line-height: 21px;
+      width: 367px;
+    }
+  }
+
+  &__button {
+    margin: 35px 0px;
+    
+    button {
+      font-size: 17px;
+    }
+  }
+}
+
+.input {
+  input {
+    padding: 21px 20px;
+    font-size: 17px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #bebebe;
+
+    &:focus {
+      border: 1px solid $color-yellow;
+    }
+  }
+}

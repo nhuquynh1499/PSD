@@ -1,0 +1,35 @@
+<section class="event">
+    <div class="container-fluid">
+        <div class="event__text">
+            <div class="event__text-subtitle">
+                @@include("../commons/typography-h6.html", {
+                    "contentTypography": "Discover"
+                })
+            </div>
+
+            <div class="event__text-title">
+                @@include("../commons/typography-h1.html", {
+                    "contentTypography": "Upcoming Events"
+                })
+            </div>
+
+            <div class="event__text-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+            </div>
+        </div>
+
+        <div class="event__slideshow">
+            <ul class="event__slideshow-listImage">
+                <li class="event__slideshow-listImage-item center"><img src="./images/slide-1.png" id="0" alt="Image slide" /></li>
+                <li class="event__slideshow-listImage-item right"><img src="./images/slide-2.png" id="1" alt="Image slide" /></li>
+                <li class="event__slideshow-listImage-item left"><img src="./images/slide-3.png" id="2" alt="Image slide" /></li>
+            </ul>
+
+            <div class="event__slideshow-slider">
+                <button class="event__slideshow-slider-item active" id="0"></button>
+                <button class="event__slideshow-slider-item" id="1"></button>
+                <button class="event__slideshow-slider-item" id="2"></button>
+            </div>
+        </div>
+    </div>
+</section>

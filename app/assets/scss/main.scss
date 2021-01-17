@@ -1,0 +1,37 @@
+@import "./partials/footer.scss";
+@import "./partials/header.scss";
+@import "./partials/banner.scss";
+@import "./partials/choiceAndEnjoy.scss";
+@import "./partials/event.scss";
+@import "./partials/album.scss";
+@import "./partials/book.scss";
+
+
+@import "./commons.scss";
+@import "./_constants.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+  
+body {
+    font-size: $font-size-body;
+    font-family: 'Montserrat';
+}
+
+footer, header, section {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 1328px;
+}
+
+@import "./responsive.scss";

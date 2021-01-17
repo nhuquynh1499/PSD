@@ -1,0 +1,20 @@
+<div class="food-item">
+    <div class="food-item__image">
+        <img src="@@imageSrc" alt="Image Food"/>
+    </div>
+    <div class="food-item__text">
+        <div class="food-item__text-title">
+            @@include("./typography-h6.html", {
+                "contentTypography": "@@titleFood"
+            })
+        </div>
+        <div class="food-item__text-sub">
+            <p>@@contentFood</p>
+        </div>
+    </div>
+    <div class="food-item__button">
+        @@include("./button-yellow.html", {
+            "contentButton": "Order now"
+        })
+    </div>
+</div>
